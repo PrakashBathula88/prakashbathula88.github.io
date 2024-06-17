@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prakash's Portfolio</title>
+    <link rel="icon" href="image/prakash.jpg">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6f3f4b23f1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/github-calendar@latest/dist/github-calendar.min.js"></script>
+    <link rel="stylesheet" href="https://unpkg.com/github-calendar@latest/dist/github-calendar-responsive.css"/>
+
+</head>
+<body>
+
+    <div class="header">
+        <div class="progress-container">
+            <div class="progress-bar" id="myBar"></div>
+        </div>
+    </div>
+
+
+    <section class="top-nav">
+        <div>
+          
+        </div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu" id="nav-menu">
+          <li><a class="tdn nav-link home" href="#home">Home</a></li>
+          <li><a class="tdn nav-link about" href="#about">About</a></li>
+          <li><a class="tdn nav-link skills" href="#skills">Tech Stack</a></li>
+          <li><a class="tdn" href="#box4">My Skills</a></li>
+          <li><a class="tdn nav-link projects" href="#projects">Project</a></li>
+          <li><a class="tdn nav-link contact" href="#contact">Contact</a></li>
+          <li><a class="tdn nav-link resume" id="resume-button-1" download target="_blank" href="prakash.pdf" onclick="setTimeout(function(){ window.open('https://drive.google.com/file/d/1Jp03fLeW7eYQxXnznrhbMhLgc_OCfX7a/view?usp=sharing'); }, 100);">Resume</a></li>
+          <li><a class="tdn nav-link github" target="_blank" href="https://github.com/PrakashBathula88">Github</a></li>
+          
+        </ul>
+    
+    </section>
+
+
+<div id="home">
+    <div class="box1" id="box1">
+
+        <div class="box11">
+
+            <div class="box111" >
+                
+                <h2 class="wlcm_note">Welcome to my portfolio!</h2>
+
+                <h2 class="some_about">
+                    I'm
+                    <span id="user-detail-name" style="color: #72351C;"> Prakash </span> <br>
+                    A passionate <span  id="user-detail-intro" style="color: #72351C;"> Front-End Web Developer </span>who focus on writing clean and user friendly applications</h2>
+                
+                <div class="btn_div">
+                    <button class="rbtn"><a  id="resume-button-2" target="_blank" download="" href="prakash.pdf" onclick="setTimeout(function(){ window.open(https://drive.google.com/file/d/1gcrBXP1C8jeOZU2uowdzzHDdhXaImBaI/view?usp=sharing); }, 100);">Resume</a></button>
+                </div>
+            
+            </div>
+
+            <div class="about-col-1">
+                <img class="home-img" src="image/prakash.jpg" alt="">
+            </div>
+
+        </div>  
+    </div>
+</div>
+
+
+<div id="about" class="about section">
+    
+    <div class="box0 reveal" id="box0">
+        
+            <div class="container">
+                <div class="row">
+                    <!-- <div class="about-col-1">
+                        <img src="image/prakash.jpg" alt="">
+                    </div> -->
+                    <div class="box112" >
+                        <img src="image/coder.svg" alt="">
+                    </div>
+                    <div class="about-col-2">
+                        <h1 class="box5h1">About me!</h1>
+                        <p id="user-detail-intro">Front-End Web Developer with the ability to learn and collaborate in Rapidly changing environments and compositions. Worked intensively through 1200+ hours of Bootcamp Structure learning of  HTML5, CSS3, JavaScript, React, Redux, Java, Next.js , MongoDb , Firebase</p>
+                        <div class="tab-title">
+                            <p class="tab-links active-link" onclick="opentab('skills')">Technical Skills</p>
+                            <p class="tab-links " onclick="opentab('soft skills')">Soft Skills</p>
+                            <p class="tab-links " onclick="opentab('education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="skills">
+                            <ul class="aboutSkill">
+                                <!-- <li><span>Java Backend Development</span><br> <span class="co">Java </span><span class="co">| Spring </span><span class="co">| Hibernate </span><span class="co">| SQL </span><span class="co">| AWS </span><span class="co">| GIT</span></li> -->
+                                <li><span>Frontend Development</span><br><span class="co">HTML5 </span><span class="co">| CSS3 </span><span class="co">| JavaScript </span><span class="co">| React </span><span class="co">| Redux</span></li>
+                                <!-- <li><span>Backend Development</span><br> <span class="co">Java</span> <span class="co">| Node</span> <span class="co">| Express</span> <span class="co">| MongoDB</span></li> -->
+                                <li><span>Data Structure & Algorithms</span><br><span class="co">Arrays/Strings </span><span class="co">| Stacks/Queues </span><span class="co">| Linked List </span><span class="co">| Recursion</span></li>
+                                <li><span>collaboration</span><br> <span class="co">GIT & GITHUB</span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents " id="soft skills">
+                            <ul class="aboutSkill">
+                                <li><span>Self-learning</span><br> <span class="co">Having the skill of self-learning can greatly benefit a developer at their workplace.</span></li>
+                                <li><span>Time management</span><br><span class="co">Being time-conscious can help a developer meet deadlines and give exact estimates.</span></li>
+                                <li><span>Problem-solving skills</span><br><span class="co">It's about designing operating systems, maintaining software systems, or fixing bugs. </span></li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="education">
+                            <ul class="aboutSkill">
+                                <li><span>Full Stack Web Development</span><span class="co"><br>Sharpener Tech, Bengaluru<br>Aug 2023 - Present</span></li>
+                                <li><span>B.COM(Computer Applications)</span><span class="co"><br>Sri Venkateswara University - Tirupati<br> Jul 2020- Aug 2023</span></li>
+                           </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+
+
+
+
+
+
+    </div>
+</div>
+      
+
+<div id="skills">
+    <div class="box2 reveal" id="box2">
+
+        <div class="box21">
+            <h1>
+                TECH-STACK
+            </h1>
+        </div>
+
+        <div class="box22">
+
+
+            <div class="tool skills-card" style="--i:8;">
+                <div>
+                    <img class="skills-card-img" src="logo/html_logo.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    HTML5
+                </div>
+            </div>
+
+
+            <div class="tool skills-card" style="--i:9;">
+                <div>
+                    <img class="skills-card-img" src="logo/css_logo.webp" alt="">
+                </div>
+                <div class="skills-card-name">
+                    CSS3
+                </div>
+            </div>
+
+
+            <div class="tool skills-card" style="--i:10;">
+                <div>
+                    <img class="skills-card-img" src="logo/js_logo2.jpg" alt="">
+                </div>
+                <div class="skills-card-name">
+                    Java Script
+                </div>
+            </div>
+
+            <div class="tool skills-card" style="--i:10;">
+                <div>
+                    <img class="skills-card-img" src="logo/react_logo.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    React
+                </div>
+            </div>
+
+            <!-- <div class="tool skills-card" style="--i:8;">
+                <div>
+                    <img class="skills-card-img" src="logo/nextjs_logo.svg" alt="Next Js">
+                </div>
+                <div class="skills-card-name">
+                    Next.js
+                </div>
+            </div> -->
+            
+            <div class="tool skills-card" style="--i:10;">
+                <div>
+                    <img class="skills-card-img" src="logo/redux_log.svg" alt="">
+                </div>
+                <div class="skills-card-name">
+                    Redux
+                </div>
+            </div>
+
+            <!-- <div class="tool skills-card" style="--i:7;"> 
+                <div>
+                    <img class="skills-card-img" src="logo/nodejs_logo.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    Node.js
+                </div>
+            </div> -->
+
+            <!-- <div class="tool skills-card" style="--i:7;"> 
+                <div>
+                    <img class="skills-card-img" src="logo/expressjs_logo.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    Express
+                </div>
+            </div> -->
+
+            <!-- <div class="tool skills-card" style="--i:7;"> 
+                <div>
+                    <img class="skills-card-img" src="logo/mongodb_logo.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    MongoDB
+                </div>
+            </div> -->
+
+            <div class="tool skills-card" style="--i:7;"> 
+                <div>
+                    <img class="skills-card-img" src="logo/Git_logo.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    Git
+                </div>
+            </div>
+
+            <div class="tool skills-card" style="--i:1;">
+                <div>
+                    <img class="skills-card-img" src="logo/java_logo.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    JAVA
+                </div>
+            </div>
+            
+            <!-- <div class="tool skills-card" style="--i:7;"> 
+                <div>
+                    <img class="skills-card-img" src="logo/Tailwind_CSS_Logo.svg.png" alt="">
+                </div>
+                <div class="skills-card-name">
+                    Tailwind
+                </div>
+            </div> -->
+
+            <!-- <div class="tool skills-card" style="--i:7;"> 
+                <div>
+                    <img class="skills-card-img" src="logo/ChakraUi_logo.jpg" alt="">
+                </div>
+                <div class="skills-card-name">
+                    Chakra UI
+                </div>
+            </div> -->
+
+        </div>
+        
+        
+    </div>
+      
+</div>
+
+    <div class="box4 reveal" id="box4">
+
+        <div class="container">
+            <div class="box41">
+                <h1>My Skills</h1>
+            </div>
+            <div class="skills-list">
+                <!-- <div>
+                    <i class="fa-brands fa-java"></i>
+                    <h2>Java Backend Development</h2>
+                    <p>Java is capable of handling more robust programming tasks than its front end counterpart. Java is an incredibly useful skill for back end developers;it's a high-performance language that supports object-oriented programming and can run in any system that supports a Java Virtual machine.</p>
+                </div> -->
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Frontend Development</h2>
+                    <p>Front-End Developer is responsible for developing new user-facing features, determining the structure and design of web pages, building reusable codes, optimizing page loading times, and using a variety of markup languages to create the web pages using HTML5 / CSS3 / JavaScript / React & Redux.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-cubes"></i>
+                    <h2>Data Structure & Algorithms</h2>
+                    <p>A data structure is a named location that can be used to store and organize data. And, an algorithm is a collection of steps to solve a particular problem.Learning data structures and algorithms allow us to write efficient and optimized computer programs.</p>
+                </div>
+                <div>
+                    <i class="fa-solid fa-face-smile"></i>
+                    <h2>Communication Effectiveness</h2>
+                    <p>Effective communication is the process of exchanging ideas, thoughts, opinions, knowledge, and data so that the message is received and understood with clarity and purpose. When we communicate effectively, both the sender and receiver feel satisfied.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+<div id="projects">
+    <div class="box3 reveal" id="box3">
+
+        <div class="box31">
+            <h1>PROJECTS</h1>
+        </div>
+        <div class="box32">
+
+            <div class="flip-card project-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure class="swing"><img class="proimg" src="image/mailboxpic.png" alt=""></figure> 
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="project-title">MailBox Client</h1>
+                        <p class="project-description">treamline your email experience with MailBox Client. Our app combines all your email accounts into one easy-to-use platform..</p>
+                        <p class="project-tech-stack">Tech stack :- React | Firebase | Bootstrap |redux</p>
+                        <div class="icons">
+                            <a target="_blank" class="project-github-link" href="https://github.com/PrakashBathula88/Mail"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" class="project-deployed-link" href="https://main--mailboxclientprakash.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="flip-card project-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure class="swing"><img class="proimg" src="image/ecommerce.png" alt=""></figure> 
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="project-title">E-commerce</h1>
+                        <p class="project-tech-stack">Tech stack :- React | CSS | JavaScript | Firebase | Redux</p>
+                        <p class="project-description">Discover the joy of shopping at ,India’s leading e-commerce platform for the coolest casual fashion..</p>
+                        
+                        <div class="icons">
+                            <a target="_blank" class="project-github-link" href="https://github.com/PrakashBathula88/E-Commerce-website/tree/MAIN"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" class="project-deployed-link" href="https://main--e-commerce-prakash.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="flip-card project-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure class="swing"><img class="proimg" src="image/expensetracker.png" alt=""></figure> 
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="project-title">Expense Tracker</h1>
+                        <p class="project-tech-stack">Tech stack :- React | Firebase | JavaScript| Redux</p>
+                        <p class="project-description">Take control of your finances with Expense tracker the ultimate expense tracker app. Easily track your spending, set budgets, and monitor your financial health in one intuitive interface</p>
+                        
+                        <div class="icons">
+                            <a target="_blank" class="project-github-link" href="https://github.com/PrakashBathula88/diaries"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" class="project-deployed-link" href="https://main--expense-tracker-prakash.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+
+            <div class="flip-card project-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure class="swing"><img class="proimg" src="image/restaurentmenu.png" alt=""></figure> 
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="project-title">Restaurent</h1>
+                        <p class="project-tech-stack">Tech stack :- React | CSS | JavaScript | Html5 </p>
+                        <p class="project-description">At Restaurent our menu is a symphony of flavors, carefully crafted using only the finest locally sourced ingredients.</p>
+                        
+                        <div class="icons">
+                            <a target="_blank" class="project-github-link" href="https://github.com/PrakashBathula88/Restaurent-website-app"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" class="project-deployed-link" href="
+                            https://main--restaurent-prakash.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> 
+
+<!--  -->
+            <!-- <div class="flip-card project-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure class="swing"><img class="proimg" src="image/lapinoz.png" alt=""></figure> 
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="project-title">Skin Store</h1>
+                        <p class="project-tech-stack">Tech stack :- HTML | CSS | JavaScript</p>
+                        <p class="project-description">A vibrant medley of garden-fresh vegetables including bell peppers, onions, tomatoes, and olives. The Veggie Delight is topped with a generous layer of mozzarella cheese, offering a refreshing</p>
+                        
+                        <div class="icons">
+                            <a target="_blank" class="project-github-link" href="https://github.com/PrakashBathula88/pizza"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" class="project-deployed-link" href="https://main--lapinoz-pizza-prakash.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div> -->
+
+            <div class="flip-card project-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure class="swing"><img class="proimg" src="image/lapinoz.png" alt=""></figure> 
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="project-title">Lapinoz Pizza</h1>
+                        <p class="project-tech-stack">Tech stack :- React | Firebase | redux | Bootstrap</p>
+                        <p class="project-description">Green Paradise is a fully functional e-commerce website designed for plant enthusiasts.</p>
+                        
+                        <div class="icons">
+                            <a target="_blank" class="project-github-link" href="https://github.com/PrakashBathula88/pizza"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" class="project-deployed-link" href="https://main--lapinoz-pizza-prakash.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            
+            <div class="flip-card project-card">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <figure class="swing"><img class="proimg" src="image/mailboxpic.png" alt=""></figure> 
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="project-title">MailBox Client</h1>
+                        <p class="project-description">treamline your email experience with MailBox Client. Our app combines all your email accounts into one easy-to-use platform..</p>
+                        <p class="project-tech-stack">Tech stack :- React | Firebase | Bootstrap |redux</p>
+                        <div class="icons">
+                            <a target="_blank" class="project-github-link" href="https://github.com/PrakashBathula88/Mail"><i class="fa-brands fa-github"></i></a>
+                            <a target="_blank" class="project-deployed-link" href="https://main--mailboxclientprakash.netlify.app/"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+
+
+        </div>
+
+
+    </div>
+</div>
+    <div class="box8 reveal">
+        <div class="calendar react-activity-calendar">
+
+            <!-- this is the div where your calander will apear -->
+            <!-- <img id="github-streak-stats" src="https://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=prakashbathula88&amp;theme=shades_of_purple" alt="GitHub Streak"> -->
+        
+        </div>
+        <div class="github_stat">
+            <img id="github-stats-card" src="https://github-readme-stats.vercel.app/api?username=prakashbathula88&show_icons=true&locale=en" alt="prakashbathula88">
+            
+            <img id="github-top-langs" src="https://github-readme-stats.vercel.app/api/top-langs?username=prakashbathula88&show_icons=true&locale=en&layout=compact" alt="prakashbathula88">
+            
+            <img id="github-streak-stats" src="https://github-readme-streak-stats.herokuapp.com/?user=prakashbathula88&" alt="prakashbathula88">
+        </div>
+    </div>
+
+    <div class="box7 reveal">
+
+        <div class="box71">
+            <div class="pieContainer">
+                <div class="pieBackground">
+                </div>
+                <div id="pieSlice99_1" class="hold">
+                    <div class="danny Col1">
+                    </div>
+                </div>
+                <div id="pieSlice99_2" class="hold">
+                    <div class="danny Col1">
+                    </div>
+                </div>
+                <div class="stat-circle-cover">  
+                    <span class="stat-number">2160+</span>
+                </div>
+            </div>
+            <div class="box712">
+                <span class="bold">Hours</span> of full stack coading
+            </div>
+        </div>
+        
+        <div class="box71">
+            <div class="pieContainer">
+                <div class="pieBackground">
+                </div>
+                <div id="pieSlice99_1" class="hold">
+                    <div class="danny Col2">
+                    </div>
+                </div>
+                <div id="pieSlice99_2" class="hold">
+                    <div class="danny Col2">
+                    </div>
+                </div>
+                <div class="stat-circle-cover">  
+                    <span class="stat-number">1100+</span>
+                </div>
+            </div>
+            <div class="box712">
+                <span class="bold">Leecode</span> problems solved
+            </div>
+        </div>
+        
+        <div class="box71">
+            <div class="pieContainer">
+                <div class="pieBackground">
+                </div>
+                <div id="pieSlice99_1" class="hold">
+                    <div class="danny Col3">
+                    </div>
+                </div>
+                <div id="pieSlice99_2" class="hold">
+                    <div class="danny Col3">
+                    </div>
+                </div>
+                <div class="stat-circle-cover">  
+                    <span class="stat-number">600+</span>
+                </div>
+            </div>
+            <div class="box712">
+                <span class="bold">Git</span> commits
+            </div>
+        </div>
+        
+        <div class="box71">
+            <div class="pieContainer">
+                <div class="pieBackground">
+                </div>
+                <div id="pieSlice99_1" class="hold">
+                    <div class="danny Col4">
+                    </div>
+                </div>
+                <div id="pieSlice99_2" class="hold">
+                    <div class="danny Col4">
+                    </div>
+                </div>
+                <div class="stat-circle-cover">  
+                    <span class="stat-number">20+</span>
+                </div>
+            </div>
+            <div class="box712">
+                <span class="bold">Projects</span> Done
+            </div>
+        </div>
+        
+        <div class="box71">
+            <div class="pieContainer">
+                <div class="pieBackground">
+                </div>
+                <div id="pieSlice99_1" class="hold">
+                    <div class="danny Col5">
+                    </div>
+                </div>
+                <div id="pieSlice99_2" class="hold">
+                    <div class="danny Col5">
+                    </div>
+                </div>
+                <div class="stat-circle-cover">  
+                    <span class="stat-number">100+</span>
+                </div>
+            </div>
+            <div class="box712">
+                <span class="bold">Hours</span> of soft skills
+            </div>    
+
+        </div>
+        
+    </div> 
+    
+
+<div id="contact">
+    <div class="box5 reveal" id="box5">
+        <div class="box51">
+            <h1>CONTACT</h1>
+        </div>
+
+        <div class="box52">
+
+            <div class="box511">
+
+                <h1 class="box5h1">Reach Out to me!</h1>
+
+                <h3 class="box5h3">DISCUSS A PROJECT OR JUST WANT TO SAY HI? MY INBOX IS OPEN FOR ALL.</h3>
+
+                
+
+                <div class="box5111">
+                    <p><i class="fa-solid fa-location-dot"></i> Madana Palle, Andhra Pradesh</p>
+                </div>
+                <div class="box5111">
+                    <p id="contact-email"><i class="fa-solid fa-envelope" ></i> bathulaprakash406@gmail.com</p>
+                </div>
+                <div class="box5111">
+                    <p id="contact-phone"><i class="fa-solid fa-phone"></i> +91-6304043831</p>
+                </div>
+
+                <div class="box5112">
+                    <div class="ico" id="contact-github"><a href="https://github.com/PrakashBathula88" target="_blank"><i class="fa-brands fa-github"></i></a></div>
+                    <div class="ico" id="contact-linkedin"><a href="https://www.linkedin.com/in/bathula-prakash-28a636255" target="_blank"><i class="fa-brands fa-linkedin"></i></a></div>
+                    <div class="ico"><a href="mailto:bathulaprakash406@gmail.com"><i class="fa-solid fa-envelope"></i></a></div>
+                    <div class="ico"><a href="tel:+916304043831"><i class="fa-solid fa-phone"></i></a></div>
+                    <div class="ico"><a href="https://wa.me/916304043831" target="_blank"><i class="fa-brands fa-whatsapp"></i></a></div>
+                </div>
+
+                
+
+            </div>
+
+                        
+            <div class="box512">
+                <img class="img51" src="image/prakash.jpg" alt="">
+                <div class="btn_div">
+                    <button class="rbtn"><a target="_blank" download="" href="prakash.pdf" onclick="setTimeout(function(){ window.open('https://drive.google.com/file/d/1gcrBXP1C8jeOZU2uowdzzHDdhXaImBaI/view?usp=sharing'); }, 100);">Resume</a></button>
+                </div>
+            </div>
+
+        </div>
+        
+        
+    </div>
+
+</div>
+
+    <div class="box6" id="box6">
+        <p>Built From Scratch With <i class="fa-sharp fa-solid fa-heart"></i> by Prakash</p>
+        <!-- <p>© Copyright 2022, All Rights Reserved.</p> -->
+    </div>
+
+
+
+    <div >
+        <a href="#box1" class="arrup"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-up-circle-fill" viewBox="0 0 16 16">
+            <path d="M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z"/>
+          </svg></a>
+    </div>
+
+
+</body>
+</html>
+<script src="script.js"></script>
